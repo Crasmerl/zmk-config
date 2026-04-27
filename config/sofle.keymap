@@ -16,7 +16,7 @@
 #define RAISE 2
 #define ADJUST 3
 #define GAMINGMH 4
-#define GAMINFMHW 5
+#define GAMINGMHW 5
 
 &pinctrl {
     spi3_default: spi3_default {
