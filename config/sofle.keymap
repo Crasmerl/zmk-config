@@ -56,9 +56,21 @@
     };
 };
 
-/ {
-    chosen { zmk,underglow = &led_strip; };
+
+
+&led_strip {
+    status = "okay";
 };
+
+&underglow {
+    status = "okay";
+};
+
+
+
+
+
+
 
 / {
 
