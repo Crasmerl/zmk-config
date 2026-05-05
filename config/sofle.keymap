@@ -58,21 +58,18 @@
 
 
 
-&led_strip {
-    status = "okay";
-};
-
-&underglow {
-    status = "okay";
-};
-
-
-
-
-
-
 
 / {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+
+    aliases {
+        underglow = &led_strip;
+    };
+
+
+
 
    // Activate ADJUST layer by pressing raise and lower
     conditional_layers {
@@ -135,7 +132,7 @@
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &trans     &trans       &trans       &trans       &trans       &trans                        &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                        &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
+&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                        &kp PG_UP &trans    &kp UP   &trans    &trans  &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                      &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans        &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans
                         &trans       &trans       &trans       &trans        &trans  &trans  &trans    &trans    &trans   &trans
