@@ -113,29 +113,30 @@
 // | TAB |  Q  |  W  |  E  |  R  |  T  |                   |  Y  |  U  |  I  |  O  |  P  | ENTER |
 // |SHIFT|  A  |  S  |  D  |  F  |  G  |                   |  H  |  J  |  K  |  L  |  ;  |  '    |
 // |CTRL |  Z  |  X  |  C  |  V  |  B  |       |  |  BASE  |  N  |  M  |  ,  |  .  |  /  | SHIFT |
-//                | GUI | ALT | SPACE |      |       |      | SPACE | ALT | GUI |
+//                |  C  | ALT | SPACE | MH2 | ENTER | SPACE | ESC | SPACE | ALT |     |
     bindings = <
 &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
 &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T                     &kp Y  &kp U  &kp I  &kp O  &kp P  &kp RET
 &kp LSHFT &kp A  &kp S  &kp D  &kp F  &kp G                     &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT
 &kp LCTRL &kp Z  &kp X  &kp C  &kp V  &kp B  &none &to BASE    &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-               &kp LGUI &kp LALT &kp SPACE &mo GAMINGMHW &trans &trans &trans &kp SPACE &kp RALT &kp RGUI
+               &kp C &kp LALT &kp SPACE &mo GAMINGMHW &kp RET &kp SPACE &kp ESC &kp SPACE &kp RALT &none
     >;
         };
       gamingmhw_layer {
             display-name = "gaming-mh2";
+// Mantén MH2: mano izquierda con F1-F10, números 6-0, flechas y mapa (M)
 // ------------------------------------------------------------------------------------------------------------
 // | ESC |  F1 |  F2 |  F3 |  F4 |  F5 |                   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | TAB |  Q  |  W  |  E  |  R  |  T  |                   |  Y  |  U  |  I  |  O  |  P  | ENTER |
-// |SHIFT|  A  |  S  |  D  |  F  |  G  |                   |  H  |  J  |  K  |  L  |  ;  |  '    |
-// |CTRL |  Z  |  X  |  C  |  V  |  B  |       |  |  BASE  |  N  |  M  |  ,  |  .  |  /  | SHIFT |
-//                | GUI | ALT | SPACE |      |       |      | SPACE | ALT | GUI |
+// | TAB |  6  |  7  |  8  |  9  |  0  |                   |  Y  |  U  |  I  |  O  |  P  | ENTER |
+// |SHIFT|  ↑  |  M  |  F6 |  F7 |  F8 |                   |  H  |  J  |  K  |  L  |  ;  |  '    |
+// |CTRL |  ←  |  ↓  |  →  |  F9 | F10 |       |  |  BASE  |  N  |  M  |  ,  |  .  |  /  | SHIFT |
+//                |  C  | ALT | SPACE | MH2 | ENTER | SPACE | ESC | SPACE | ALT |     |
     bindings = <
-&kp ESC   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
-&kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T                     &kp Y  &kp U  &kp I  &kp O  &kp P  &kp RET
-&kp LSHFT &kp A  &kp S  &kp D  &kp F  &kp G                     &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT
-&kp LCTRL &kp Z  &kp X  &kp C  &kp V  &kp B  &none &to BASE    &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-               &kp LGUI &kp LALT &kp SPACE &trans &trans &trans &trans &kp SPACE &kp RALT &kp RGUI
+&kp ESC   &kp F1   &kp F2   &kp F3    &kp F4 &kp F5                     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
+&kp TAB   &kp N6   &kp N7   &kp N8    &kp N9 &kp N0                     &kp Y  &kp U  &kp I  &kp O  &kp P  &kp RET
+&kp LSHFT &kp UP   &kp M    &kp F6    &kp F7 &kp F8                     &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT
+&kp LCTRL &kp LEFT &kp DOWN &kp RIGHT &kp F9 &kp F10 &none &to BASE     &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+               &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
     >;
 
     };
